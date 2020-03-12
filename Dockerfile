@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM ubuntu:16.04
 
 MAINTAINER PsyKzz <matt.daemon660@gmail.com>
 
@@ -8,7 +8,7 @@ ENV OVERWRITE_DIRECTORY=/opt/server-overwrite
 
 # Install dependencies
 RUN apt-get update &&\
-    apt-get install -y curl lib32gcc1
+    apt-get install -y curl lib32gcc1 gcc-5 g++-5
 
 # Download and extract SteamCMD
 RUN mkdir -p /opt/steamcmd &&\
