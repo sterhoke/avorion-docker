@@ -19,5 +19,6 @@
 
 (
 	cd ${SERVER_DIRECTORY}
-	./server.sh
+	./server.sh --admin ${USER}
+	CMD server/server.sh --galaxy-name world --admin $SERVER_ADMIN --datapath galaxy/
 )
